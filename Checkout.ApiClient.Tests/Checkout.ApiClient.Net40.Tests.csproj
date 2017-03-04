@@ -77,6 +77,7 @@
     <Compile Include="CustomerService\CustomerServiceTests.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DrinkService\DrinkServiceTests.cs" />
     <Compile Include="ErrorResponse\ErrorResponseTests.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -104,6 +105,7 @@
       <Name>Checkout.ApiClient.Net40</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

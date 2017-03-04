@@ -8,6 +8,7 @@ using Checkout.ApiServices.Tokens.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Checkout.ApiServices.DrinksService.RequestModels;
 using Tests.Utils;
 using FilterAction = Checkout.ApiServices.SharedModels.Action;
 
@@ -630,6 +631,37 @@ namespace Tests
         public static QueryRequest GetQueryRequest()
         {
             return GetQueryRequest(null);
+        }
+
+        #endregion
+
+        #region Drink Helpers
+
+        public static DrinkCreate GetDrinkCreateModel()
+        {
+            return new DrinkCreate()
+            {
+                Name = "Coca Cola",
+                Description = "Fizzy Drink"
+            };
+        }
+
+        public static DrinkCreate GetDrinkWaterCreateModel()
+        {
+            return new DrinkCreate()
+            {
+                Name = "Evian",
+                Description = "Still Water"
+            };
+        }
+
+        public static DrinkUpdate GetDrinkUpdateModel()
+        {
+            return new DrinkUpdate()
+            {
+                Name = "Evian",
+                Description = "Still Water"
+            };
         }
 
         #endregion

@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiServices\Cards\CardService.cs" />
+    <Compile Include="ApiServices\Cards\RequestModels\DrinkGetList.cs" />
     <Compile Include="ApiServices\Charges\ChargeService.cs" />
     <Compile Include="ApiServices\Charges\RequestModels\BaseChargeInfo.cs" />
     <Compile Include="ApiServices\Charges\RequestModels\ChargeVoid.cs" />
@@ -112,6 +113,12 @@
     <Compile Include="ApiServices\Customers\ResponseModels\CustomerList.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ApiServices\DrinksService\DrinkService.cs" />
+    <Compile Include="ApiServices\DrinksService\RequestModels\BaseDrink.cs" />
+    <Compile Include="ApiServices\DrinksService\RequestModels\DrinkUpdate.cs" />
+    <Compile Include="ApiServices\DrinksService\RequestModels\DrinkCreate.cs" />
+    <Compile Include="ApiServices\DrinksService\ResponseModels\Drink.cs" />
+    <Compile Include="ApiServices\DrinksService\ResponseModels\DrinkList.cs" />
     <Compile Include="ApiServices\Lookups\LookupsService.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\CountryInfo.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\LocalPaymentData.cs" />

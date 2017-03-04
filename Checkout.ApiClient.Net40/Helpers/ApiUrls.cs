@@ -24,6 +24,9 @@
         private static string _cardsApiUri;
         private static string _cardApiUri;
 
+        private static string _drinksApiUri;
+        private static string _drinkApiUri;
+
         private static string _reportingTransactionsUri;
         private static string _reportingChargebacksUri;
 
@@ -56,6 +59,8 @@
             _customerApiUri = null;
             _cardsApiUri = null;
             _cardApiUri = null;
+            _drinksApiUri = null;
+            _drinkApiUri = null;
             _reportingTransactionsUri = null;
             _reportingChargebacksUri = null;
             _binLookupUri = null;
@@ -213,6 +218,22 @@
             get
             {
                 return _cardApiUri ?? (_cardApiUri = string.Concat(AppSettings.BaseApiUri, "/customers/{0}/cards/{1}"));
+            }
+        }
+
+        public static string Drinks
+        {
+            get
+            {
+                return _drinksApiUri ?? (_drinksApiUri = string.Concat(AppSettings.BaseApiUri, "/drinks"));
+            }
+        }
+
+        public static string Drink
+        {
+            get
+            {
+                return _drinkApiUri ?? (_drinkApiUri = string.Concat(AppSettings.BaseApiUri, "/drinks/{0}"));
             }
         }
 
